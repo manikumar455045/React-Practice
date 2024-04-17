@@ -1,0 +1,42 @@
+.container {
+    background: rgb(232, 238, 237);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calendar-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.calendar-dates {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headline {
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    margin: 8px 0;
+    text-align: center;
+}
+.btn-submit {
+    align-content: center;
+    border-radius: 4px;
+    border: 2px solid rgb(204, 204, 204);
+    font-size: 20px;
+    height: 44px;
+    margin-left: 8px;
+    padding: 4px 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.text-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+

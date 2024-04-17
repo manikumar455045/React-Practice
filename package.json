@@ -1,0 +1,25 @@
+{
+  "name": "react-practice",
+  "version": "1.0.0",
+  "description": "My own React template",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mani Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.24.4",
+    "axios": "^1.6.5",
+    "moment": "^2.30.1",
+    "parcel": "^2.10.3",
+    "react": "^18.2.0",
+    "react-calendar": "^4.8.0",
+    "react-dates": "^21.8.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}
