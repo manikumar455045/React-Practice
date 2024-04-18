@@ -38,5 +38,12 @@
     justify-content: center;
 }
 
+.dashed {
+    border-bottom: 3px solid #bbb;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 8px;
+  }
+
 
 

@@ -3,7 +3,8 @@ import moment from "moment";
 import { DateRangePicker } from "react-dates";
 import "react-dates/initialize";
 import "react-dates/lib/css/_datepicker.css";
-import './Calendar.css'
+import './Calendar.css';
+import badge from '../../Assets/badge.jpg';
 
 const CalendarComp = () => {
   const [startDate, setStartDate] = useState(null);
@@ -12,8 +13,8 @@ const CalendarComp = () => {
   const calendarRef = useRef();
   const isOutsideRange = (day) => {
     const tomorrow = moment().add(1, "days");
-    console.log('day', day.toDate('dd-mm-yyyy'));
-    return day < tomorrow;
+    console.log('day', moment(day).month() > 4);
+    return !(moment(day).month() > 3);
   };
   const clearDates = () => {
     setStartDate(null);
@@ -55,7 +56,15 @@ const CalendarComp = () => {
       <button className="btn-submit" onClick={handleSubmit} disabled={!(startDate && endDate)}>Submit</button>
       </div>
       </div>
-    </section>   
+    </section>  
+    <div style={{display: 'flex', marginTop: '8px', alignItems: 'center', flexDirection: 'column', width: '250px', borderRadius: '15px', boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px'}}> 
+    <div style={{width: '250px', height: '250px', overflow: 'hidden', borderRadius: '15px 15px 0 0'}}>
+      <img src={badge} style={{width: '100%', height: '100%'}}/>
+    </div>
+    <h2 className="dashed">Mani Kumar</h2>
+    <div className="dashed">Senion Experience Engineer</div>
+    <div style={{padding: '8px'}}>Publicis Sapient</div>
+    </div>
     </>
   );
 };
